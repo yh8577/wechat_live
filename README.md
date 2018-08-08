@@ -50,7 +50,9 @@ rtmp {
 
 srs配置
 ~/srs/trunk/conf 目录新建一个 .conf的文件 配置内容如下
+
 listen              2018;
+
 max_connections     1000; 
 
 http_server {
@@ -84,6 +86,7 @@ vhost __defaultVhost__ {
     tcp_nodelay     on;
 
 }
+
 然后运行命令是配置生效
 ./objs/srs -c conf/名称.conf
 
