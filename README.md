@@ -24,7 +24,7 @@
 nginx直接在github clone 到服务器 
 nginx 设置
 nginx安装好后在nginx.conf文件中最后加入
-
+```
 rtmp {
 
     server {
@@ -45,12 +45,12 @@ rtmp {
     }
     
 }
-
+```
 重启Nginx: nginx -s reload 是配置生效
 
 srs配置
 ~/srs/trunk/conf 目录新建一个 .conf的文件 配置内容如下
-
+```
 listen              2018;
 
 max_connections     1000; 
@@ -88,7 +88,7 @@ vhost __defaultVhost__ {
     tcp_nodelay     on;
 
 }
-
+```
 然后运行命令是配置生效
 ./objs/srs -c conf/名称.conf
 
