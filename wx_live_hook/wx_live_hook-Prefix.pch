@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'wx_live_hook' target in the 'wx_live_hook' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
