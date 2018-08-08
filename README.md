@@ -24,20 +24,26 @@
 nginx直接在github clone 到服务器 
 nginx 设置
 nginx安装好后在nginx.conf文件中最后加入
+
 rtmp {
+
     server {
         listen 2018;
         application rtmplive {
             live on;
             max_connections 1024;
+            
         }
+        
         application hls{
+        
             live on;
             hls on;
             hls_path /usr/local/var/www/hls;
             hls_fragment 1s;
         }
     }
+    
 }
 
 重启Nginx: nginx -s reload 是配置生效
