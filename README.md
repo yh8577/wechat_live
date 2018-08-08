@@ -56,9 +56,11 @@ listen              2018;
 max_connections     1000; 
 
 http_server {
+
     enabled         on;
     listen          8080;
     dir             ./objs/nginx/html;
+    
 }
 
 vhost __defaultVhost__ {
