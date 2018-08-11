@@ -18,9 +18,6 @@
 #define sheZhiFuWuQi @"#服务器"
 #define WeiSheZhiFuWuQi @"#未设置服务器地址格式:[#服务器255.255.255.0]"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@end
 
 @interface WCPayInfoItem: NSObject
 
